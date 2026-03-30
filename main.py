@@ -37,7 +37,7 @@ def main():
             print(f"Auth Error: {e}")
             return
 
-        activities = client.get_activities(limit=5)
+        activities = client.get_activities(limit=50)
         
         for summary in activities:
             print(f"Processing: {summary.name} ({summary.id})")
